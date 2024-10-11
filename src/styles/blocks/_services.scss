@@ -1,0 +1,30 @@
+.services {
+  padding: 100px 0;
+  background-color: $color-light;
+}
+
+.services_inner {
+  @include inner;
+}
+
+.services_title {
+  text-align: center;
+  font-size: 58px;
+  font-weight: 300;
+  line-height: 68px;
+  color: $color-accent;
+}
+
+.services_heading {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47px;
+  color: $color-dark;
+}
+
+.services_text {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+  color: $color-dark;
+}
