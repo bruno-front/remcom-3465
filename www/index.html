@@ -63,6 +63,39 @@
     </div>
   </section>
 
+  <section class="order">
+    <div class="order_inner">
+      <h2 class="order_title">Заявка на ремонт</h2>
+
+      <form action="#" class="form">
+        <div class="form_field form_field-half">
+          <label for="name" class="form_label">Имя</label>
+          <input name="name" id="name" type="text" class="form_text">
+        </div>
+        <div class="form_field form_field-half">
+          <label for="tel" class="form_label">Телефон</label>
+          <input name="phone" id="tel" type="tel" class="form_text">
+        </div>
+        <div class="form_field">
+          <label for="message" class="form_label">Что ремонтируем?</label>
+          <textarea name="message" id="message" class="form_textarea"></textarea>
+        </div>
+        <div class="form_field">
+          <input name="confirm" id="confirm" type="checkbox" class="form_checkbox">
+          <label for="confirm" class="form_check-label">
+            <span>
+              Даю согласие на обработку персональных данных с соответствии с
+              <a href="#">политикой обработки персональных данных</a>
+            </span>
+          </label>
+        </div>
+        <div class="form_field">
+          <button type="submit" class="btn btn-full">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <script src="scripts/script.js"></script>
 </body>
 

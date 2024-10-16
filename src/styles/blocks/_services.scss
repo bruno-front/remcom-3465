@@ -8,11 +8,7 @@
 }
 
 .services_title {
-  text-align: center;
-  font-size: 58px;
-  font-weight: 300;
-  line-height: 68px;
-  color: $color-accent;
+  @include title;
 }
 
 .services_heading {
