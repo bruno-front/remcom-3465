@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social_item {
+  list-style: none;
+}
+
+.social_link {
+  display: block;
+  width: 26px;
+  height: 26px;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

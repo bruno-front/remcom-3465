@@ -6,3 +6,47 @@
 .promo_inner {
   @include inner;
 }
+
+.promo_row {
+  display: flex;
+  gap: 30px;
+}
+
+.promo_content {
+  flex-basis: calc(50% - 15px);
+}
+
+.promo_title {
+  margin-bottom: 70px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: $color-accent;
+
+  strong {
+    display: block;
+    margin-bottom: 20px;
+    font-family: $font-title;
+    font-size: 116px;
+    line-height: 136px;
+    font-weight: 300;
+  }
+}
+
+.promo_visual {
+  flex-basis: calc(50% - 15px);
+}
+
+.promo_figure {
+  position: relative;
+}
+
+.promo_img-desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: $color-light;
+  background-color: rgba($color-dark, .7);
+}

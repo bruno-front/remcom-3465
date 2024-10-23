@@ -9,9 +9,48 @@
 
 .services_title {
   @include title;
+  margin-bottom: 70px;
+}
+
+.services_list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 30px;
+  list-style: none;
+}
+
+.services_item {
+  flex-basis: calc(50% - 15px);
+}
+
+.services_icon {
+  display: block;
+  height: 56px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+.services_icon-microwave {
+  background-image: url('../images/icon-serv-microwave.svg');
+}
+
+.services_icon-phone {
+  background-image: url('../images/icon-serv-phone.svg');
+}
+
+.services_icon-speaker {
+  background-image: url('../images/icon-serv-speaker.svg');
+}
+
+.services_icon-wood {
+  background-image: url('../images/icon-serv-wood.svg');
 }
 
 .services_heading {
+  margin-bottom: 30px;
   font-size: 40px;
   font-weight: 500;
   line-height: 47px;
