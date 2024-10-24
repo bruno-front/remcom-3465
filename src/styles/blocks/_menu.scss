@@ -1,4 +1,7 @@
 .menu {
+  @media (max-width: $tablet-max) {
+    display: none;
+  }
 
   ul {
     display: flex;
@@ -19,5 +22,4 @@
       color: $color-accent;
     }
   }
-
 }
