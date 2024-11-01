@@ -16,8 +16,8 @@
 }
 
 .services_title {
-  margin-bottom: 70px;
   @include title;
+  margin-bottom: 70px;
 
   @media (max-width: $tablet-max) {
     margin-bottom: 60px;
@@ -92,6 +92,10 @@
     font-size: 32px;
     line-height: 38px;
   }
+}
+
+.services_heading-red {
+  color: red;
 }
 
 .services_text {
