@@ -46,11 +46,13 @@
 }
 
 .header_phone {
+  // flex-shrink: 0;
   margin-left: 100px;
   font-size: 24px;
   line-height: 32px;
   color: $color-light;
   text-decoration: none;
+  white-space: nowrap; // что бы телефон не переносился на вторую строку
 
   @media (max-width: $tablet-max) {
     margin-left: 0;
@@ -65,6 +67,16 @@
 
   &:hover {
     color: $color-accent;
+  }
+}
+
+.header_phone-mobile {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    display: inline-block;
+    margin: 0;
+    margin-top: 50px;
   }
 }
 
