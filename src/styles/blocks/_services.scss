@@ -16,8 +16,8 @@
 }
 
 .services_title {
-  @include title;
   margin-bottom: 70px;
+  @include title;
 
   @media (max-width: $tablet-max) {
     margin-bottom: 60px;
