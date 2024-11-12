@@ -18,7 +18,7 @@
             <li><a href="reviews.html">Отзывы</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="works.html">Наши работы</a></li>
+            <li><a class="active" href="works.html">Наши работы</a></li>
           </ul>
           <a href="tel:+78008008080" class="header_phone header_phone-mobile">+7 800 800-80-80</a>
         </nav>
@@ -32,6 +32,65 @@
     <section class="works">
       <div class="works_inner">
         <h1 class="works_title">Наши работы</h1>
+
+        <ul class="tabs">
+          <li class="tabs_item">
+            <a href="#" class="tabs_link active js-filter-link" data-filter="all">Все</a>
+          </li>
+          <li class="tabs_item">
+            <a href="#" class="tabs_link js-filter-link" data-filter="electro">Электроника</a>
+          </li>
+          <li class="tabs_item">
+            <a href="#" class="tabs_link js-filter-link" data-filter="wood">Мебель</a>
+          </li>
+        </ul>
+
+        <ul class="works_list">
+          <li class="works_item js-works-item" data-type="electro">Электровеник</li>
+          <li class="works_item js-works-item" data-type="wood">Деревянные тапочки</li>
+          <li class="works_item js-works-item" data-type="wood">Кресло</li>
+          <li class="works_item js-works-item" data-type="electro">Вентилятор</li>
+          <li class="works_item js-works-item" data-type="wood">Стол</li>
+          <li class="works_item js-works-item" data-type="electro">Лампочка налобная электронная</li>
+          <li class="works_item js-works-item" data-type="electro">колонки</li>
+          <li class="works_item js-works-item" data-type="wood">Комод</li>
+          <li class="works_item js-works-item" data-type="electro">Электро-механический запускатель бумажных фонариков
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery_inner">
+        <h2 class="gallery_title">Фотографии</h2>
+
+        <div class="slider js-slider">
+          <div class="slider_item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque minima, reiciendis, rerum quam animi
+              obcaecati rem repellendus deleniti ullam recusandae, vitae doloremque dolores vero quos laboriosam optio
+              accusantium velit. Quibusdam?</p>
+          </div>
+          <div class="slider_item">
+            <p>Quae officiis exercitationem maiores. Modi qui voluptate, recusandae ea vero fuga dolorum numquam.
+              Obcaecati nulla maxime accusamus, voluptatum facere sit eum quae quos tempore porro vero voluptas ullam,
+              natus incidunt?</p>
+          </div>
+          <div class="slider_item">
+            <p>Earum veniam explicabo repellendus iste? Dolorum suscipit ex error aliquam! Animi velit quis atque non
+              omnis ea accusamus nobis aspernatur aut labore, similique sunt autem laudantium sequi! Quidem, eius
+              voluptates.</p>
+          </div>
+          <div class="slider_item">
+            <p>Temporibus ea odio quos dolor illum qui molestias! Quia blanditiis vero consequatur iusto praesentium
+              facere aliquam sapiente officiis! Omnis vel amet animi voluptatem cupiditate! Reiciendis consectetur dicta
+              debitis. Aut, quam?</p>
+          </div>
+          <div class="slider_item">
+            <p>Incidunt voluptatibus corporis explicabo, quisquam repellat vitae eos ea dicta deserunt aliquid
+              accusantium vel esse obcaecati quasi, nobis non impedit et nihil quibusdam neque dolor delectus pariatur
+              ipsa! Quibusdam, fugiat.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -106,8 +165,11 @@
     </div>
   </footer>
 
+
   <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
   <script src="scripts/script.js"></script>
+
 </body>
 
 </html>

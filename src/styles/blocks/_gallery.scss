@@ -1,0 +1,13 @@
+.gallery {
+  padding: 100px 0;
+  background-color: $color-light;
+}
+
+.gallery_inner {
+  @include inner;
+}
+
+.gallery_title {
+  margin-bottom: 70px;
+  @include title;
+}

@@ -8,5 +8,47 @@
 }
 
 .reviews_title {
+  margin-bottom: 100px;
   @include title;
 }
+
+.reviews_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 70px;
+}
+
+.reviews_item {
+  flex-basis: calc(50% - 15px);
+  display: flex;
+  align-items: center;
+}
+
+.reviews_ava {
+  width: 188px;
+  height: 188px;
+  margin-right: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews_name {
+  font-family: $font-title;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.reviews_quote {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.reviews_btn {
+  margin-top: 100px;
+  text-align: center;
+}
+

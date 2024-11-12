@@ -10,3 +10,11 @@
 .contacts_title {
   @include title;
 }
+
+.contacts_tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

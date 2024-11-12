@@ -10,3 +10,18 @@
 .works_title {
   @include title;
 }
+
+.works_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.works_item {
+  flex-basis: calc(25% - 90px / 4);
+  padding: 15px;
+  list-style: none;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba($color-accent, .2);
+  background-color: #fff;
+}
