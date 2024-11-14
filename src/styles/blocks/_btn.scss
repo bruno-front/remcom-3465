@@ -13,6 +13,11 @@
   border: none;
   background-color: $color-accent;
   cursor: pointer;
+
+  &:disabled {
+    cursor: initial;
+    opacity: .5;
+  }
 }
 
 .btn-full {

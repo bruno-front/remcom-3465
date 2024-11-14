@@ -80,6 +80,52 @@ $(document).ready(function() {
   // Slick slider
   $('.js-slider').slick();
 
+
+  // Подгрузка отзывов
+  $('.js-reviews-more').on('click', function() {
+    let btn = this;
+
+    $(btn).attr('disabled', 'disabled')
+
+    $.ajax({
+      type: 'POST',
+      url: '../jsons/reviews.json',
+      data: {
+        quantity: 2
+      },
+      success: function(res) {
+        let reviewsHtmlString = createReviewsHtml(res.reviews);
+        console.log(reviewsHtmlString);
+
+        $('.js-reviews-wrap').append(reviewsHtmlString);
+        $(btn).removeAttr('disabled')
+      },
+      error: function() {
+        console.log('AAAAAAAAAAAAA!! ВСЕ ПРОПАЛО! ГИПС УЕЗЖАЕТ - КЛИЕНТ СНИМАЕТ');
+      }
+    });
+  });
+
+  function createReviewsHtml(reviewsArray) {
+    let result = '';
+
+    reviewsArray.forEach(function (review) {
+      result += `<div class="reviews_item">
+        <img src="${review.avaUrl}" alt="${review.avaAlt}" class="reviews_ava">
+        <div class="reviews_text">
+          <strong class="reviews_name">${review.name}</strong>
+          <blockquote class="reviews_quote">
+            “${review.text}”
+          </blockquote>
+        </div>
+      </div>`;
+    });
+
+    return result;
+  }
+
+
+
 });
 
 
