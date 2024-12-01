@@ -64,6 +64,7 @@
   color: $color-dark;
   font-size: 20px;
   line-height: 27px;
+  cursor: pointer;
 
   &:before {
     content: '';
@@ -73,8 +74,10 @@
     height: 32px;
     margin-right: 11px;
     border: 2px solid $color-accent;
+    background-color: #fff;
     border-radius: 4px;
     cursor: pointer;
+    transition: all .3s;
   }
 
   a {

@@ -85,7 +85,8 @@ $(document).ready(function() {
   $('.js-reviews-more').on('click', function() {
     let btn = this;
 
-    $(btn).attr('disabled', 'disabled')
+    $(btn).attr('disabled', 'disabled');
+    $(btn).addClass('preload');
 
     $.ajax({
       type: 'POST',
@@ -99,9 +100,11 @@ $(document).ready(function() {
 
         $('.js-reviews-wrap').append(reviewsHtmlString);
         $(btn).removeAttr('disabled')
+        $(btn).removeClass('preload');
       },
       error: function() {
         console.log('AAAAAAAAAAAAA!! ВСЕ ПРОПАЛО! ГИПС УЕЗЖАЕТ - КЛИЕНТ СНИМАЕТ');
+        $(btn).removeClass('preload');
       }
     });
   });
